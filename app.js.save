@@ -1,0 +1,7 @@
+let firstnum = document.getElementById("firstnum");
+firstnum.innerHTML = Math.floor(Math.random()*21);
+
+  GNU nano 3.2                                       app.js                                                 
+
+let firstnum = document.getElementById("firstnum");
+firstnum.innerHTML = Math.floor(Math.random()*21);
