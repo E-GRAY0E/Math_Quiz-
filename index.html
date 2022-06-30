@@ -2,26 +2,50 @@
 <html>
 	<head>
 		<title>Math Quiz!</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style-index.css">
 	</head>
-	<main>
-		<h1>Math Quiz!</h1>
-		<div id="container">
-			<div id="answer"></div>
-			<div id="firstnum"></div>
-			<div id="plus">+</div>
-			<div id="secondnum"></div>
-			<div id="equals">______</div>
-			<input id="userinput" type="text">
-			<div class="buttons">
-				<button id="submit" onClick="runGame()">Submit Answer</button>		
-				<button id="next" onClick="nextQ()">Next Question</button>		
-			</div>
-			<div id="counter"></div>		
-		</div>
-	</main>	
-	<footer>
-		<script src="app.js"></script>
-	</footer>
-	</head>
+	<body>
+	  	
+	  <div class="circle">
+	    <div class="logo"></div>
+	    <div class="text">
+	      <p>Math Quiz! - Developed by E-GRAY0E - </p>
+	    </div>
+	    <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Select Quiz Type</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="add.html">Addition</a>
+                <a href="sub.html">Subtraction</a>
+              </div>
+            </div>
+
+            </div>
+	</body>
+	
+	<script>
+	const text = document.querySelector('.text p');
+	text.innerHTML = text.innerHTML.split('').map(
+	  (char, i) =>
+	  `<span style="transform:rotate(${i * 9.72}deg)">${char}</span>`
+	  ).join("");
+	/* When the user clicks on the button,
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+  	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+  	if (!event.target.matches('.dropbtn')) {
+    	var dropdowns = document.getElementsByClassName("dropdown-content");
+    	var i;
+    	for (i = 0; i < dropdowns.length; i++) {
+      	var openDropdown = dropdowns[i];
+      	if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	</script>
 </html>
