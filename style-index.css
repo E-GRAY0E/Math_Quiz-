@@ -13,8 +13,8 @@ body {
 }
 .circle {
 	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	background-image: linear-gradient(#555, #000, #555);
 	display: flex;
@@ -24,8 +24,8 @@ body {
 }
 .logo {
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	background-image: linear-gradient(#555, #000, #555);
 	background-size: cover;
 	border-radius: 50%;
@@ -34,8 +34,8 @@ body {
 }
 .logo:hover {
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(#000, #555, #000);
         background-size: cover;
         border-radius: 50%;
@@ -67,7 +67,7 @@ body {
 	position: absolute;
 	left: 50%;
 	font-size: 1.5em;
-	transform-origin: 0 100px;
+	transform-origin: 0 150px;
 	-webkit-animation: rotateText 10s linear infinte;
 }
 
@@ -77,11 +77,11 @@ body {
   background-color: #3498DB;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 2em;
   border: none;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   text-align: center;
 }
@@ -114,6 +114,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-size: 1.5em;
 }
 
 /* Change color of dropdown links on hover */
