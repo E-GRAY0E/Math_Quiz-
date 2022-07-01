@@ -25,7 +25,6 @@ h1 {
 	box-shadow: 10px 10px lightgray;
         align-items: center;
         flex-direction: column;
-	row-gap: 25rem;
 	column-gap: 5em;
 }
 #answer{
